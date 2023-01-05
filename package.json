@@ -12,7 +12,7 @@
     "url": "git+https://github.com/dayanalittle/expresslab.git"
   },
   "author": "",
-  "title": "module",
+  "type": "module",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dayanalittle/expresslab/issues"
