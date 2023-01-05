@@ -1,0 +1,12 @@
+<body>
+    <h1>inventory</h1>
+    <ul>
+        <% inventory.forEach(inventory=> { %>
+            <li>
+                <%= inventory.text %>
+                    -
+                    <%= inventory.sold ? 'sold' : 'not sold' %>
+            </li>
+            <% }) %>
+    </ul>
+</body>

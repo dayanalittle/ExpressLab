@@ -2,11 +2,17 @@
 
 import express from 'express'
 
+// import inventory data
+
+import { inventory } from './data/inventory-data.js'
+
 // Create Express app
 
 const app = express()
 
 // Configure the app (app.set)
+
+app.set('view engine', 'ejs')
 
 
 
@@ -20,8 +26,11 @@ app.get('/', function (req, res) {
     res.send('<h1>hello,friend</h1>')
 })
 
-app.get('/home', function (req, res) {
-    res.send('home')
+
+app.get('/inventory', function (req, res) {
+    res.render('inventory/index', {
+        inventory: inventory
+    })
 })
 
 // Tell the app to listen on port 3000
